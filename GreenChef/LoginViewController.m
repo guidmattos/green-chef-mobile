@@ -9,8 +9,12 @@
 #import "LoginViewController.h"
 #import "HTTPRequest.h"
 #import "SVProgressHUD.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface LoginViewController ()
+@interface LoginViewController () <FBSDKLoginButtonDelegate>
+
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *facebookLoginButton;
 
 @end
 
@@ -19,11 +23,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.facebookLoginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(performLogin) userInfo:nil repeats:NO]; // delay for facebook animation
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
+    if (error) {
+        NSLog(@"Process error");
+    } else if (result.isCancelled) {
+        NSLog(@"Cancelled");
+    } else {
+        [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(performLogin) userInfo:nil repeats:NO]; // delay for facebook animation
+    }
+}
+
+-(void)performLogin {
+    [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+}
+
+-(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
+    NSLog(@"Logged out");
 }
 
 - (IBAction)login:(id)sender {
@@ -87,6 +113,10 @@
         return false;
     
     return true;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Login");
 }
 
 

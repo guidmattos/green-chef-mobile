@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Guilherme Duarte Mattos. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Copyright (c) 2015 Guilherme Duarte Mattos. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
                     <rect key="frame" x="20" y="626" width="336" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.58039215690000001" green="0.14901960780000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
@@ -20,15 +20,14 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrreeChefLogo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BM4-PG-k8e">
                     <rect key="frame" x="67" y="112" width="240" height="239"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="240" id="MyU-OD-BIR"/>
-                        <constraint firstAttribute="height" constant="239" id="l10-Ul-CyT"/>
+                        <constraint firstAttribute="width" constant="240" id="2Sf-xu-4hF"/>
+                        <constraint firstAttribute="height" constant="239" id="Bvm-GH-DaD"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Chef" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-aY-rID">
                     <rect key="frame" x="110" y="348" width="155" height="42"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="42" id="d9w-5c-1qr"/>
-                        <constraint firstAttribute="width" constant="155" id="tNZ-Y8-XgV"/>
+                        <constraint firstAttribute="height" constant="42" id="aWx-8F-tQh"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <color key="textColor" red="0.58039215686274515" green="0.14901960784313725" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,15 +36,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="pVm-aY-rID" secondAttribute="trailing" constant="110" id="CJp-0m-qkQ"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstItem="pVm-aY-rID" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="348" id="NtO-Yy-ZOl"/>
-                <constraint firstAttribute="trailing" secondItem="BM4-PG-k8e" secondAttribute="trailing" constant="68" id="Rq5-2e-2i5"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="BM4-PG-k8e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="67" id="k6b-qc-brt"/>
-                <constraint firstItem="BM4-PG-k8e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="112" id="laJ-1h-yqI"/>
-                <constraint firstItem="pVm-aY-rID" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="mpG-2e-mew"/>
+                <constraint firstItem="pVm-aY-rID" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="348" id="4XM-Ln-UUz"/>
+                <constraint firstAttribute="trailing" secondItem="pVm-aY-rID" secondAttribute="trailing" constant="110" id="NC8-sX-YlE"/>
+                <constraint firstItem="pVm-aY-rID" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="O6Y-qM-QMc"/>
+                <constraint firstItem="BM4-PG-k8e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VOL-jW-UTf"/>
+                <constraint firstItem="pVm-aY-rID" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="m0z-mP-QX9"/>
+                <constraint firstItem="BM4-PG-k8e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="112" id="tHH-dM-w4q"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
