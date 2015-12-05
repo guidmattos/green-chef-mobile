@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 
--(void) loginWithEmail:(NSString *) email andPassword:(NSString *) password;
+-(void) login;
 
 @end
 

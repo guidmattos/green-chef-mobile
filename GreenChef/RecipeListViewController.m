@@ -8,11 +8,17 @@
 
 #import "RecipeListViewController.h"
 #import "RecipeTableViewCell.h"
+#import "Recipe.h"
+#import "HTTPRequest.h"
+#import "SVProgressHUD.h"
+#import "RecipeDetailsViewController.h"
 
 @interface RecipeListViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray *recipesList;
+@property NSIndexPath *selectedRecipeIndexPath;
+@property Recipe *selectedRecipe;
 
 @end
 
@@ -21,9 +27,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self.tableView registerNib:[UINib nibWithNibName:@"RecipeTableViewCell" bundle:nil] forCellReuseIdentifier:@"RecipeTableViewCell"];
+    self.navigationItem.hidesBackButton = YES;
+    
     self.recipesList = [[NSMutableArray alloc] init];
-    [self.recipesList addObject:@""];
+    
+    [SVProgressHUD show];
+    
+    // Manager
+    HTTPRequest *manager = [[HTTPRequest alloc] initWithAuthorization:[[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]];
+    
+    NSString *url = [NSString stringWithFormat:@"%@/recipes", BASE_URL];
+    
+    // Operation
+    AFHTTPRequestOperation *operation = [manager GET:url
+                                           parameters:nil
+                                              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                  
+                                                  [SVProgressHUD dismiss];
+                                                  for (NSDictionary *dict in [responseObject objectForKey:@"recipes"]) {
+                                                      [self.recipesList addObject:[[Recipe alloc] initWithDictionary:dict]];
+                                                  }
+                                                  
+                                                  [self.tableView reloadData];
+                                                  
+                                              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                  NSLog(@"FAILURE");
+                                                  [SVProgressHUD dismiss];
+                                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ops!"
+                                                                                                  message:@"Usuário e/ou senha incorretos."
+                                                                                                 delegate:nil
+                                                                                        cancelButtonTitle:@"OK"
+                                                                                        otherButtonTitles:nil];
+                                                  [alert show];
+                                              }];
+    [operation start];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,21 +82,32 @@
         NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"RecipeTableViewCell" owner:self options:nil];
         cell = [topLevelObjects objectAtIndex:0];
     }
+    
+    Recipe *recipe = [self.recipesList objectAtIndex:indexPath.row];
+    [cell fillWithRecipe:recipe];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    self.selectedRecipe = [self.recipesList objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:@"RecipeDetailSegue" sender:self];
+    self.selectedRecipeIndexPath = indexPath;
+
 }
 
-/*
+-(void)viewWillDisappear:(BOOL)animated {
+    [self.tableView deselectRowAtIndexPath:self.selectedRecipeIndexPath animated:NO];
+}
+
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    RecipeDetailsViewController *viewController = [segue destinationViewController];
+    viewController.recipe = self.selectedRecipe;
 }
-*/
+
 
 @end

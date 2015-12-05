@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Recipe.h"
 
 @interface RecipeTableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *recipeNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *recipeUnitValueLabel;
+
+- (void)fillWithRecipe:(Recipe *) recipe;
 
 @end

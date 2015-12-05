@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172215C11BEACEAB004BF911 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172215C01BEACEAB004BF911 /* ResultViewController.m */; };
+		172215C41BEADBDC004BF911 /* OrderConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172215C31BEADBDC004BF911 /* OrderConfirmationViewController.m */; };
 		173584851BAF6CAF00C44B1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173584841BAF6CAF00C44B1D /* main.m */; };
 		173584881BAF6CAF00C44B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 173584871BAF6CAF00C44B1D /* AppDelegate.m */; };
 		1735848B1BAF6CAF00C44B1D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1735848A1BAF6CAF00C44B1D /* LoginViewController.m */; };
@@ -14,23 +16,30 @@
 		173584901BAF6CAF00C44B1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1735848F1BAF6CAF00C44B1D /* Images.xcassets */; };
 		173584931BAF6CAF00C44B1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173584911BAF6CAF00C44B1D /* LaunchScreen.xib */; };
 		1735849F1BAF6CAF00C44B1D /* GreenChefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1735849E1BAF6CAF00C44B1D /* GreenChefTests.m */; };
-		173923111BBDB7EF00F9D8E9 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 173923101BBDB7EF00F9D8E9 /* HTTPRequest.m */; settings = {ASSET_TAGS = (); }; };
-		175C85CD1BD00F0900E44CD4 /* GrreeChefLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 175C85CC1BD00F0900E44CD4 /* GrreeChefLogo.jpg */; settings = {ASSET_TAGS = (); }; };
-		179AFA101BDE466E0005FA8E /* mark-zuckerbergs-profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA0F1BDE466E0005FA8E /* mark-zuckerbergs-profile.jpg */; settings = {ASSET_TAGS = (); }; };
-		179AFA141BDE48AB0005FA8E /* 3-5-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA131BDE48AB0005FA8E /* 3-5-stars.png */; settings = {ASSET_TAGS = (); }; };
-		179AFA1D1BDE4A8A0005FA8E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA1C1BDE4A8A0005FA8E /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
-		179AFA201BDE4ABA0005FA8E /* RecipeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA1F1BDE4ABA0005FA8E /* RecipeListViewController.m */; settings = {ASSET_TAGS = (); }; };
-		179AFA231BDE4AD90005FA8E /* RecipeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA221BDE4AD90005FA8E /* RecipeDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		179AFA261BDE4B100005FA8E /* DeliveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA251BDE4B100005FA8E /* DeliveryViewController.m */; settings = {ASSET_TAGS = (); }; };
-		179AFA2A1BDE4E1E0005FA8E /* RecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA281BDE4E1E0005FA8E /* RecipeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		179AFA2B1BDE4E1E0005FA8E /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA291BDE4E1E0005FA8E /* RecipeTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		179AFA2F1BDE540B0005FA8E /* IngredientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA2D1BDE540B0005FA8E /* IngredientTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		179AFA301BDE540B0005FA8E /* IngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA2E1BDE540B0005FA8E /* IngredientTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		179AFA321BDE57880005FA8E /* Sufle-de-legumes.png in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA311BDE57880005FA8E /* Sufle-de-legumes.png */; settings = {ASSET_TAGS = (); }; };
+		173923111BBDB7EF00F9D8E9 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 173923101BBDB7EF00F9D8E9 /* HTTPRequest.m */; };
+		174B679F1BFBE56E00D82B19 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 174B679E1BFBE56E00D82B19 /* Order.m */; };
+		174FA4421BFB587400ACD250 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174FA4411BFB587400ACD250 /* BaseViewController.m */; };
+		175C85CD1BD00F0900E44CD4 /* GreenChefLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 175C85CC1BD00F0900E44CD4 /* GreenChefLogo.jpg */; };
+		1785F35D1BEB8A6A007DE732 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785F35C1BEB8A6A007DE732 /* CoreLocation.framework */; };
+		1785F3611BEBC7CE007DE732 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785F3601BEBC7CE007DE732 /* Recipe.m */; };
+		1785F3651BECE617007DE732 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785F3641BECE617007DE732 /* success.png */; };
+		1785F36B1BECE78B007DE732 /* profile_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785F36A1BECE78B007DE732 /* profile_icon.png */; };
+		1785F36D1BECE86C007DE732 /* recipe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785F36C1BECE86C007DE732 /* recipe_icon.png */; };
+		1785F36F1BECE954007DE732 /* profile_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785F36E1BECE954007DE732 /* profile_placeholder.png */; };
+		1785F3721BED0C6E007DE732 /* HomeTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785F3711BED0C6E007DE732 /* HomeTabBarViewController.m */; };
+		179AFA1D1BDE4A8A0005FA8E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA1C1BDE4A8A0005FA8E /* ProfileViewController.m */; };
+		179AFA201BDE4ABA0005FA8E /* RecipeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA1F1BDE4ABA0005FA8E /* RecipeListViewController.m */; };
+		179AFA231BDE4AD90005FA8E /* RecipeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA221BDE4AD90005FA8E /* RecipeDetailsViewController.m */; };
+		179AFA261BDE4B100005FA8E /* DeliveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA251BDE4B100005FA8E /* DeliveryViewController.m */; };
+		179AFA2A1BDE4E1E0005FA8E /* RecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA281BDE4E1E0005FA8E /* RecipeTableViewCell.m */; };
+		179AFA2B1BDE4E1E0005FA8E /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA291BDE4E1E0005FA8E /* RecipeTableViewCell.xib */; };
+		179AFA2F1BDE540B0005FA8E /* IngredientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179AFA2D1BDE540B0005FA8E /* IngredientTableViewCell.m */; };
+		179AFA301BDE540B0005FA8E /* IngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA2E1BDE540B0005FA8E /* IngredientTableViewCell.xib */; };
+		179AFA321BDE57880005FA8E /* Sufle-de-legumes.png in Resources */ = {isa = PBXBuildFile; fileRef = 179AFA311BDE57880005FA8E /* Sufle-de-legumes.png */; };
 		179AFA341BDE58F20005FA8E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AFA331BDE58F20005FA8E /* MapKit.framework */; };
-		179AFA431BDE823E0005FA8E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AFA411BDE823E0005FA8E /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		179AFA441BDE823E0005FA8E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AFA421BDE823E0005FA8E /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		17EDD0E91BD021DE009B74D1 /* LoginViewControllerTestcase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EDD0E81BD021DE009B74D1 /* LoginViewControllerTestcase.m */; settings = {ASSET_TAGS = (); }; };
+		179AFA431BDE823E0005FA8E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AFA411BDE823E0005FA8E /* FBSDKCoreKit.framework */; };
+		179AFA441BDE823E0005FA8E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179AFA421BDE823E0005FA8E /* FBSDKLoginKit.framework */; };
+		17EDD0E91BD021DE009B74D1 /* LoginViewControllerTestcase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EDD0E81BD021DE009B74D1 /* LoginViewControllerTestcase.m */; };
 		22EF0F6857ADB58BAE8E5E17 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4519B9106C6D97132880DFF1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172215BE1BE82636004BF911 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		172215BF1BEACEAB004BF911 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		172215C01BEACEAB004BF911 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		172215C21BEADBDC004BF911 /* OrderConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderConfirmationViewController.h; sourceTree = "<group>"; };
+		172215C31BEADBDC004BF911 /* OrderConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderConfirmationViewController.m; sourceTree = "<group>"; };
 		1735847F1BAF6CAF00C44B1D /* GreenChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		173584831BAF6CAF00C44B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		173584841BAF6CAF00C44B1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,9 +74,20 @@
 		1735849E1BAF6CAF00C44B1D /* GreenChefTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenChefTests.m; sourceTree = "<group>"; };
 		1739230F1BBDB7EF00F9D8E9 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
 		173923101BBDB7EF00F9D8E9 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
-		175C85CC1BD00F0900E44CD4 /* GrreeChefLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = GrreeChefLogo.jpg; path = ../GrreeChefLogo.jpg; sourceTree = "<group>"; };
-		179AFA0F1BDE466E0005FA8E /* mark-zuckerbergs-profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mark-zuckerbergs-profile.jpg"; sourceTree = "<group>"; };
-		179AFA131BDE48AB0005FA8E /* 3-5-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-5-stars.png"; sourceTree = "<group>"; };
+		174B679D1BFBE56E00D82B19 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		174B679E1BFBE56E00D82B19 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		174FA4401BFB587400ACD250 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		174FA4411BFB587400ACD250 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		175C85CC1BD00F0900E44CD4 /* GreenChefLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = GreenChefLogo.jpg; path = ../GreenChefLogo.jpg; sourceTree = "<group>"; };
+		1785F35C1BEB8A6A007DE732 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1785F35F1BEBC7CE007DE732 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		1785F3601BEBC7CE007DE732 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		1785F3641BECE617007DE732 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		1785F36A1BECE78B007DE732 /* profile_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_icon.png; sourceTree = "<group>"; };
+		1785F36C1BECE86C007DE732 /* recipe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipe_icon.png; sourceTree = "<group>"; };
+		1785F36E1BECE954007DE732 /* profile_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_placeholder.png; sourceTree = "<group>"; };
+		1785F3701BED0C6E007DE732 /* HomeTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabBarViewController.h; sourceTree = "<group>"; };
+		1785F3711BED0C6E007DE732 /* HomeTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabBarViewController.m; sourceTree = "<group>"; };
 		179AFA1B1BDE4A8A0005FA8E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		179AFA1C1BDE4A8A0005FA8E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		179AFA1E1BDE4ABA0005FA8E /* RecipeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeListViewController.h; sourceTree = "<group>"; };
@@ -92,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1785F35D1BEB8A6A007DE732 /* CoreLocation.framework in Frameworks */,
 				179AFA341BDE58F20005FA8E /* MapKit.framework in Frameworks */,
 				179AFA431BDE823E0005FA8E /* FBSDKCoreKit.framework in Frameworks */,
 				179AFA441BDE823E0005FA8E /* FBSDKLoginKit.framework in Frameworks */,
@@ -109,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172215BD1BE8260F004BF911 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				172215BE1BE82636004BF911 /* Utils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		173584761BAF6CAF00C44B1D = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +173,8 @@
 				173584911BAF6CAF00C44B1D /* LaunchScreen.xib */,
 				175C85CF1BD00F1900E44CD4 /* ViewController */,
 				179AFA151BDE49D30005FA8E /* TableViewCell */,
+				1785F35E1BEBC7A8007DE732 /* Model */,
+				172215BD1BE8260F004BF911 /* Utils */,
 				175C85CE1BD00F1100E44CD4 /* Images */,
 				1768146E1BD07C3200BBE4E1 /* Service */,
 				173584821BAF6CAF00C44B1D /* Supporting Files */,
@@ -176,10 +212,12 @@
 		175C85CE1BD00F1100E44CD4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				179AFA131BDE48AB0005FA8E /* 3-5-stars.png */,
+				1785F36A1BECE78B007DE732 /* profile_icon.png */,
+				1785F3641BECE617007DE732 /* success.png */,
+				1785F36C1BECE86C007DE732 /* recipe_icon.png */,
+				1785F36E1BECE954007DE732 /* profile_placeholder.png */,
 				179AFA311BDE57880005FA8E /* Sufle-de-legumes.png */,
-				179AFA0F1BDE466E0005FA8E /* mark-zuckerbergs-profile.jpg */,
-				175C85CC1BD00F0900E44CD4 /* GrreeChefLogo.jpg */,
+				175C85CC1BD00F0900E44CD4 /* GreenChefLogo.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -187,8 +225,12 @@
 		175C85CF1BD00F1900E44CD4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				174FA4401BFB587400ACD250 /* BaseViewController.h */,
+				174FA4411BFB587400ACD250 /* BaseViewController.m */,
 				173584891BAF6CAF00C44B1D /* LoginViewController.h */,
 				1735848A1BAF6CAF00C44B1D /* LoginViewController.m */,
+				1785F3701BED0C6E007DE732 /* HomeTabBarViewController.h */,
+				1785F3711BED0C6E007DE732 /* HomeTabBarViewController.m */,
 				179AFA1B1BDE4A8A0005FA8E /* ProfileViewController.h */,
 				179AFA1C1BDE4A8A0005FA8E /* ProfileViewController.m */,
 				179AFA1E1BDE4ABA0005FA8E /* RecipeListViewController.h */,
@@ -197,6 +239,10 @@
 				179AFA221BDE4AD90005FA8E /* RecipeDetailsViewController.m */,
 				179AFA241BDE4B100005FA8E /* DeliveryViewController.h */,
 				179AFA251BDE4B100005FA8E /* DeliveryViewController.m */,
+				172215C21BEADBDC004BF911 /* OrderConfirmationViewController.h */,
+				172215C31BEADBDC004BF911 /* OrderConfirmationViewController.m */,
+				172215BF1BEACEAB004BF911 /* ResultViewController.h */,
+				172215C01BEACEAB004BF911 /* ResultViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +254,17 @@
 				173923101BBDB7EF00F9D8E9 /* HTTPRequest.m */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		1785F35E1BEBC7A8007DE732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1785F35F1BEBC7CE007DE732 /* Recipe.h */,
+				1785F3601BEBC7CE007DE732 /* Recipe.m */,
+				174B679D1BFBE56E00D82B19 /* Order.h */,
+				174B679E1BFBE56E00D82B19 /* Order.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		179AFA151BDE49D30005FA8E /* TableViewCell */ = {
@@ -235,6 +292,7 @@
 		EEFCBC3E6A9DB5144C749577 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1785F35C1BEB8A6A007DE732 /* CoreLocation.framework */,
 				179AFA411BDE823E0005FA8E /* FBSDKCoreKit.framework */,
 				179AFA421BDE823E0005FA8E /* FBSDKLoginKit.framework */,
 				179AFA331BDE58F20005FA8E /* MapKit.framework */,
@@ -326,13 +384,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179AFA141BDE48AB0005FA8E /* 3-5-stars.png in Resources */,
-				179AFA101BDE466E0005FA8E /* mark-zuckerbergs-profile.jpg in Resources */,
-				175C85CD1BD00F0900E44CD4 /* GrreeChefLogo.jpg in Resources */,
+				175C85CD1BD00F0900E44CD4 /* GreenChefLogo.jpg in Resources */,
+				1785F3651BECE617007DE732 /* success.png in Resources */,
+				1785F36B1BECE78B007DE732 /* profile_icon.png in Resources */,
 				179AFA301BDE540B0005FA8E /* IngredientTableViewCell.xib in Resources */,
 				1735848E1BAF6CAF00C44B1D /* Main.storyboard in Resources */,
 				173584931BAF6CAF00C44B1D /* LaunchScreen.xib in Resources */,
+				1785F36D1BECE86C007DE732 /* recipe_icon.png in Resources */,
 				173584901BAF6CAF00C44B1D /* Images.xcassets in Resources */,
+				1785F36F1BECE954007DE732 /* profile_placeholder.png in Resources */,
 				179AFA2B1BDE4E1E0005FA8E /* RecipeTableViewCell.xib in Resources */,
 				179AFA321BDE57880005FA8E /* Sufle-de-legumes.png in Resources */,
 			);
@@ -386,15 +446,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1735848B1BAF6CAF00C44B1D /* LoginViewController.m in Sources */,
+				174FA4421BFB587400ACD250 /* BaseViewController.m in Sources */,
 				173923111BBDB7EF00F9D8E9 /* HTTPRequest.m in Sources */,
 				179AFA2F1BDE540B0005FA8E /* IngredientTableViewCell.m in Sources */,
 				173584881BAF6CAF00C44B1D /* AppDelegate.m in Sources */,
+				1785F3611BEBC7CE007DE732 /* Recipe.m in Sources */,
+				172215C41BEADBDC004BF911 /* OrderConfirmationViewController.m in Sources */,
+				172215C11BEACEAB004BF911 /* ResultViewController.m in Sources */,
 				179AFA1D1BDE4A8A0005FA8E /* ProfileViewController.m in Sources */,
 				179AFA2A1BDE4E1E0005FA8E /* RecipeTableViewCell.m in Sources */,
 				179AFA261BDE4B100005FA8E /* DeliveryViewController.m in Sources */,
 				179AFA231BDE4AD90005FA8E /* RecipeDetailsViewController.m in Sources */,
 				173584851BAF6CAF00C44B1D /* main.m in Sources */,
 				179AFA201BDE4ABA0005FA8E /* RecipeListViewController.m in Sources */,
+				174B679F1BFBE56E00D82B19 /* Order.m in Sources */,
+				1785F3721BED0C6E007DE732 /* HomeTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,26 @@
 
 @implementation HTTPRequest
 
+-(id)initWithAuthorization:(NSString *)authorization {
+    self = [super init];
+    if (self) {
+        [self setResponseSerializer:[AFJSONResponseSerializer serializer]];
+        NSString *token = [NSString stringWithFormat:@"Bearer %@", authorization]; // standard prefix
+        [self.requestSerializer setValue:token forHTTPHeaderField:@"Authorization"];
+    }
+    return self;
+}
+
+-(id)initWithAuthorizationHTTPResponse:(NSString *)authorization {
+    self = [super init];
+    if (self) {
+        [self setResponseSerializer:[AFHTTPResponseSerializer serializer]];
+        NSString *token = [NSString stringWithFormat:@"Bearer %@", authorization]; // standard prefix
+        [self.requestSerializer setValue:token forHTTPHeaderField:@"Authorization"];
+    }
+    return self;
+}
+
 -(AFHTTPRequestOperation *)POST:(NSString *)URLString
                      parameters:(id)parameters
                         success:(void (^)(AFHTTPRequestOperation *, id))success

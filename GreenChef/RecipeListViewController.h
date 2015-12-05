@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface RecipeListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface RecipeListViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

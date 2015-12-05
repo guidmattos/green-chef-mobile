@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "Recipe.h"
 
-@interface DeliveryViewController : UIViewController 
+@interface DeliveryViewController : BaseViewController <UITextFieldDelegate>
+
+@property Recipe *recipe;
 
 @end

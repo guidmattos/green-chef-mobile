@@ -54,9 +54,5 @@
     XCTAssertNil(self.loginViewController.passwordTextField);
 }
 
-- (void)testLoginWorking {
-    
-    [self.loginViewController loginWithEmail:@"example@example.com" andPassword:@"teste123"];
-}
 
 @end

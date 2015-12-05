@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -12,36 +12,46 @@
             <rect key="frame" x="0.0" y="0.0" width="363" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="363" height="116"/>
+                <rect key="frame" x="0.0" y="0.0" width="363" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Sufle-de-legumes.png" translatesAutoresizingMaskIntoConstraints="NO" id="frB-Cs-cra">
-                        <rect key="frame" x="8" y="8" width="105" height="100"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sufle-de-legumes.png" translatesAutoresizingMaskIntoConstraints="NO" id="frB-Cs-cra">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="7sz-eZ-PXW"/>
                             <constraint firstAttribute="height" constant="100" id="9Fl-0X-5Ue"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Suflê de legumes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-be-ucB">
-                        <rect key="frame" x="121" y="8" width="234" height="67"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suflê de legumes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-be-ucB">
+                        <rect key="frame" x="116" y="8" width="239" height="62"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="67" id="idv-JB-qJM"/>
+                            <constraint firstAttribute="height" constant="62" id="idv-JB-qJM"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3-5-stars.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-gj-RdO">
-                        <rect key="frame" x="121" y="83" width="95" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="95" id="C7z-Vh-JPV"/>
-                            <constraint firstAttribute="height" constant="25" id="kTr-lQ-gb4"/>
-                        </constraints>
-                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTn-qn-9gg">
+                        <rect key="frame" x="266" y="87" width="22" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.73673930919999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7,45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="3sS-Bv-QuD">
+                        <rect key="frame" x="296" y="87" width="59" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.73673930919999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor Unitário: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-K7-0VL">
+                        <rect key="frame" x="167" y="87" width="91" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="wsF-gj-RdO" firstAttribute="leading" secondItem="frB-Cs-cra" secondAttribute="trailing" constant="8" id="Cp4-lc-pcS"/>
-                    <constraint firstItem="wsF-gj-RdO" firstAttribute="top" secondItem="ZEk-be-ucB" secondAttribute="bottom" constant="8" id="Jkv-J4-pL3"/>
                     <constraint firstItem="frB-Cs-cra" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Uze-ze-BSc"/>
                     <constraint firstItem="ZEk-be-ucB" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ycy-pV-pLM"/>
                     <constraint firstItem="ZEk-be-ucB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="aYC-2a-w3X"/>
@@ -49,11 +59,15 @@
                     <constraint firstItem="frB-Cs-cra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wZf-tE-4ye"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="recipeImageView" destination="frB-Cs-cra" id="lVt-F8-sjA"/>
+                <outlet property="recipeNameLabel" destination="ZEk-be-ucB" id="qDD-z3-xcZ"/>
+                <outlet property="recipeUnitValueLabel" destination="3sS-Bv-QuD" id="21v-AG-cyH"/>
+            </connections>
             <point key="canvasLocation" x="504.5" y="506"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="3-5-stars.png" width="1600" height="373"/>
         <image name="Sufle-de-legumes.png" width="1200" height="904"/>
     </resources>
 </document>

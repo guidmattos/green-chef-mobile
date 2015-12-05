@@ -1,14 +1,17 @@
 //
 //  HTTPRequest.h
-//  Timetable
+//  Greenchef
 //
-//  Created by Alex Lima on 15/12/14.
-//  Copyright (c) 2014 Alex Lima. All rights reserved.
+//  Created by Guilherme Duarte Mattos on 15/12/14.
+//  Copyright (c) 2015 Guilherme Duarte Mattos. All rights reserved.
 //
 
 #import <AFNetworking/AFNetworking.h>
 
 @interface HTTPRequest : AFHTTPRequestOperationManager
+
+-(id)initWithAuthorization:(NSString *)authorization;
+-(id)initWithAuthorizationHTTPResponse:(NSString *)authorization;
 
 -(AFHTTPRequestOperation *)POST:(NSString *)URLString
                      parameters:(id)parameters

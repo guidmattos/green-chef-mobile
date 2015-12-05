@@ -7,10 +7,10 @@
 //
 
 #import "LoginViewController.h"
-#import "HTTPRequest.h"
-#import "SVProgressHUD.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "HTTPRequest.h"
+#import "SVProgressHUD.h"
 
 @interface LoginViewController () <FBSDKLoginButtonDelegate>
 
@@ -23,9 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.facebookLoginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
-    if ([FBSDKAccessToken currentAccessToken]) {
-        [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(performLogin) userInfo:nil repeats:NO]; // delay for facebook animation
+//    self.facebookLoginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+//    if ([FBSDKAccessToken currentAccessToken]) {
+//        [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(performLogin) userInfo:nil repeats:NO]; // delay for facebook animation
+//    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"access_token"]) {
+        
+        [self.emailTextField setText:[[NSUserDefaults standardUserDefaults] objectForKey:@"email"]];
+        [self.passwordTextField setText:[[NSUserDefaults standardUserDefaults] objectForKey:@"password"]];
+
+        [self login];
     }
 }
 
@@ -34,15 +42,15 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
-    if (error) {
-        NSLog(@"Process error");
-    } else if (result.isCancelled) {
-        NSLog(@"Cancelled");
-    } else {
-        [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(performLogin) userInfo:nil repeats:NO]; // delay for facebook animation
-    }
-}
+//-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
+//    if (error) {
+//        NSLog(@"Process error");
+//    } else if (result.isCancelled) {
+//        NSLog(@"Cancelled");
+//    } else {
+//        [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(performLogin) userInfo:nil repeats:NO]; // delay for facebook animation
+//    }
+//}
 
 -(void)performLogin {
     [self performSegueWithIdentifier:@"LoginSegue" sender:self];
@@ -53,6 +61,10 @@
 }
 
 - (IBAction)login:(id)sender {
+    [self login];
+}
+
+-(void) login {
     
     if (![self validateFields]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ops!"
@@ -64,13 +76,10 @@
         return;
     }
     
-    [self loginWithEmail:self.emailTextField.text andPassword:self.passwordTextField.text];
-}
-
--(void) loginWithEmail:(NSString *) email andPassword:(NSString *) password {
+    NSString *email = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
     
     [SVProgressHUD show];
-    [[NSUserDefaults standardUserDefaults] setValue:email forKey:@"email"];
     
     // Parameter
     NSDictionary *parameters = @{@"email": email,
@@ -80,8 +89,7 @@
     HTTPRequest *manager = [[HTTPRequest alloc] init];
     [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
     
-//    NSString *url = @"http://pad-development-env.elasticbeanstalk.com/api/v1/auth/signin";
-    NSString *url = @"http://pad-prime-api.app/api/v1/auth/signin";
+    NSString *url = [NSString stringWithFormat:@"%@/auth/signin", BASE_URL];
     
     // Operation
     AFHTTPRequestOperation *operation = [manager POST:url
@@ -89,6 +97,12 @@
                                               success:^(AFHTTPRequestOperation *operation, id responseObject) {
                                                   
                                                   [SVProgressHUD dismiss];
+                                                  NSString *accessToken = [[responseObject objectForKey:@"data"] objectForKey:@"access_token"];
+                                                  
+                                                  [[NSUserDefaults standardUserDefaults] setValue:accessToken forKey:@"access_token"];
+                                                  [[NSUserDefaults standardUserDefaults] setValue:email forKey:@"email"];
+                                                  [[NSUserDefaults standardUserDefaults] setValue:password forKey:@"password"];
+                                                  
                                                   [self performSegueWithIdentifier:@"LoginSegue" sender:self];
                                                   
                                               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
