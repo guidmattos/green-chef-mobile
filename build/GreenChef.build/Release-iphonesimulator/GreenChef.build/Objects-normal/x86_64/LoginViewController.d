@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/GreenChef/LoginViewController.m \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/GreenChef/LoginViewController.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/GreenChef/BaseViewController.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/GreenChef/Utils.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKButton.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKUtility.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKSettings.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKProfile.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKConstants.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKMacros.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKCopying.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKCoreKit.framework/Modules/module.modulemap \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/FBSDKLoginKit.framework/Modules/module.modulemap \
+  /Users/guilhermeduartemattos/Desktop/GreenChef/GreenChef/GreenChef/HTTPRequest.h
